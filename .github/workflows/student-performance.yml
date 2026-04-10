@@ -53,7 +53,7 @@ jobs:
         
     - name: Deploy Report to GitHub Pages (Optional)
       if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
-      ontinue-on-error: true
+      continue-on-error: true
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
