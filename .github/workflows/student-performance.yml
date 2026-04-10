@@ -30,7 +30,6 @@ jobs:
         
     - name: Run Student Performance Analysis
       run: |
-        cd student-performance-app
         python app.py
       env:
         MARKS_FILE: student_marks.json
