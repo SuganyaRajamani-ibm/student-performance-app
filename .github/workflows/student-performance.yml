@@ -1,0 +1,61 @@
+name: Student Performance Analysis
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:  # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  analyze-performance:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: Display Python version
+      run: python --version
+      
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        
+    - name: Run Student Performance Analysis
+      run: |
+        cd student-performance-app
+        python app.py
+      env:
+        MARKS_FILE: student_marks.json
+        OUTPUT_FILE: report.html
+        
+    - name: Upload HTML Report as Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: student-performance-report
+        path: student-performance-app/report.html
+        retention-days: 30
+        
+    - name: Display Report Summary
+      run: |
+        echo "✅ Student Performance Analysis Complete!"
+        echo "📊 Report generated successfully"
+        echo "📥 Download the HTML report from the Artifacts section"
+        
+    - name: Deploy Report to GitHub Pages (Optional)
+      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./student-performance-app
+        publish_branch: gh-pages
+        keep_files: false
+
+# Made with Bob
