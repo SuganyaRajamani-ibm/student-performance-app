@@ -5,11 +5,11 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
-  workflow_dispatch:  # Allows manual trigger from GitHub Actions tab
+  workflow_dispatch:
 
 permissions:
-     contents: write  # Required for GitHub Pages deployment
-     
+  contents: write
+
 jobs:
   analyze-performance:
     runs-on: ubuntu-latest
@@ -34,6 +34,7 @@ jobs:
     - name: Run Student Performance Analysis
       run: |
         python app.py
+        ls -la
       env:
         MARKS_FILE: student_marks.json
         OUTPUT_FILE: report.html
@@ -41,19 +42,16 @@ jobs:
     - name: Upload HTML Report as Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: Commit Report to Repository
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add report.html
-          git diff --quiet && git diff --staged --quiet || git commit -m "Generate performance report"
-          git push        
+        name: student-performance-report
+        path: report.html
+        retention-days: 30
+        if-no-files-found: error
         
     - name: Display Report Summary
       run: |
-        echo "✅ Student Performance Analysis Complete!"
-        echo "📊 Report generated successfully"
-        echo "📥 Download the HTML report from the Artifacts section"
+        echo "Student Performance Analysis Complete!"
+        echo "Report generated successfully"
+        echo "Download the HTML report from the Artifacts section"
         
     - name: Deploy Report to GitHub Pages (Optional)
       if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
@@ -61,8 +59,6 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./student-performance-app
+        publish_dir: ./
         publish_branch: gh-pages
         keep_files: false
-
-# Made with Bob
