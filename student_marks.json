@@ -1,0 +1,167 @@
+[
+  {
+    "id": "STU001",
+    "name": "Alice Johnson",
+    "marks": {
+      "Mathematics": 92,
+      "Physics": 88,
+      "Chemistry": 85,
+      "English": 90,
+      "Computer Science": 95
+    }
+  },
+  {
+    "id": "STU002",
+    "name": "Bob Smith",
+    "marks": {
+      "Mathematics": 78,
+      "Physics": 82,
+      "Chemistry": 75,
+      "English": 80,
+      "Computer Science": 88
+    }
+  },
+  {
+    "id": "STU003",
+    "name": "Charlie Brown",
+    "marks": {
+      "Mathematics": 65,
+      "Physics": 70,
+      "Chemistry": 68,
+      "English": 72,
+      "Computer Science": 75
+    }
+  },
+  {
+    "id": "STU004",
+    "name": "Diana Prince",
+    "marks": {
+      "Mathematics": 95,
+      "Physics": 92,
+      "Chemistry": 90,
+      "English": 88,
+      "Computer Science": 98
+    }
+  },
+  {
+    "id": "STU005",
+    "name": "Ethan Hunt",
+    "marks": {
+      "Mathematics": 55,
+      "Physics": 60,
+      "Chemistry": 58,
+      "English": 65,
+      "Computer Science": 70
+    }
+  },
+  {
+    "id": "STU006",
+    "name": "Fiona Green",
+    "marks": {
+      "Mathematics": 88,
+      "Physics": 85,
+      "Chemistry": 90,
+      "English": 82,
+      "Computer Science": 87
+    }
+  },
+  {
+    "id": "STU007",
+    "name": "George Wilson",
+    "marks": {
+      "Mathematics": 45,
+      "Physics": 50,
+      "Chemistry": 48,
+      "English": 55,
+      "Computer Science": 52
+    }
+  },
+  {
+    "id": "STU008",
+    "name": "Hannah Lee",
+    "marks": {
+      "Mathematics": 82,
+      "Physics": 78,
+      "Chemistry": 85,
+      "English": 88,
+      "Computer Science": 90
+    }
+  },
+  {
+    "id": "STU009",
+    "name": "Ian McKellen",
+    "marks": {
+      "Mathematics": 70,
+      "Physics": 75,
+      "Chemistry": 72,
+      "English": 78,
+      "Computer Science": 80
+    }
+  },
+  {
+    "id": "STU010",
+    "name": "Julia Roberts",
+    "marks": {
+      "Mathematics": 98,
+      "Physics": 95,
+      "Chemistry": 92,
+      "English": 94,
+      "Computer Science": 99
+    }
+  },
+  {
+    "id": "STU011",
+    "name": "Kevin Hart",
+    "marks": {
+      "Mathematics": 35,
+      "Physics": 40,
+      "Chemistry": 38,
+      "English": 42,
+      "Computer Science": 45
+    }
+  },
+  {
+    "id": "STU012",
+    "name": "Laura Palmer",
+    "marks": {
+      "Mathematics": 85,
+      "Physics": 88,
+      "Chemistry": 82,
+      "English": 86,
+      "Computer Science": 91
+    }
+  },
+  {
+    "id": "STU013",
+    "name": "Michael Scott",
+    "marks": {
+      "Mathematics": 72,
+      "Physics": 68,
+      "Chemistry": 70,
+      "English": 75,
+      "Computer Science": 78
+    }
+  },
+  {
+    "id": "STU014",
+    "name": "Nina Simone",
+    "marks": {
+      "Mathematics": 90,
+      "Physics": 87,
+      "Chemistry": 88,
+      "English": 92,
+      "Computer Science": 94
+    }
+  },
+  {
+    "id": "STU015",
+    "name": "Oscar Wilde",
+    "marks": {
+      "Mathematics": 62,
+      "Physics": 65,
+      "Chemistry": 60,
+      "English": 68,
+      "Computer Science": 72
+    }
+  }
+]
