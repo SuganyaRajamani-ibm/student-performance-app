@@ -1,7 +1,7 @@
 [
   {
     "id": "STU001",
-    "name": "Alice Johnson",
+    "name": "Aarav Sharma",
     "marks": {
       "Mathematics": 92,
       "Physics": 88,
@@ -12,7 +12,7 @@
   },
   {
     "id": "STU002",
-    "name": "Bob Smith",
+    "name": "Vivaan Patel",
     "marks": {
       "Mathematics": 78,
       "Physics": 82,
@@ -23,7 +23,7 @@
   },
   {
     "id": "STU003",
-    "name": "Charlie Brown",
+    "name": "Aditya Kumar",
     "marks": {
       "Mathematics": 65,
       "Physics": 70,
@@ -34,7 +34,7 @@
   },
   {
     "id": "STU004",
-    "name": "Diana Prince",
+    "name": "Diya Reddy",
     "marks": {
       "Mathematics": 95,
       "Physics": 92,
@@ -45,7 +45,7 @@
   },
   {
     "id": "STU005",
-    "name": "Ethan Hunt",
+    "name": "Arjun Singh",
     "marks": {
       "Mathematics": 55,
       "Physics": 60,
@@ -56,7 +56,7 @@
   },
   {
     "id": "STU006",
-    "name": "Fiona Green",
+    "name": "Ananya Iyer",
     "marks": {
       "Mathematics": 88,
       "Physics": 85,
@@ -67,7 +67,7 @@
   },
   {
     "id": "STU007",
-    "name": "George Wilson",
+    "name": "Rohan Gupta",
     "marks": {
       "Mathematics": 45,
       "Physics": 50,
@@ -78,7 +78,7 @@
   },
   {
     "id": "STU008",
-    "name": "Hannah Lee",
+    "name": "Ishita Desai",
     "marks": {
       "Mathematics": 82,
       "Physics": 78,
@@ -89,7 +89,7 @@
   },
   {
     "id": "STU009",
-    "name": "Ian McKellen",
+    "name": "Kabir Mehta",
     "marks": {
       "Mathematics": 70,
       "Physics": 75,
@@ -100,7 +100,7 @@
   },
   {
     "id": "STU010",
-    "name": "Julia Roberts",
+    "name": "Saanvi Nair",
     "marks": {
       "Mathematics": 98,
       "Physics": 95,
@@ -111,7 +111,7 @@
   },
   {
     "id": "STU011",
-    "name": "Kevin Hart",
+    "name": "Vihaan Joshi",
     "marks": {
       "Mathematics": 35,
       "Physics": 40,
@@ -122,7 +122,7 @@
   },
   {
     "id": "STU012",
-    "name": "Laura Palmer",
+    "name": "Priya Krishnan",
     "marks": {
       "Mathematics": 85,
       "Physics": 88,
@@ -133,7 +133,7 @@
   },
   {
     "id": "STU013",
-    "name": "Michael Scott",
+    "name": "Reyansh Verma",
     "marks": {
       "Mathematics": 72,
       "Physics": 68,
@@ -144,7 +144,7 @@
   },
   {
     "id": "STU014",
-    "name": "Nina Simone",
+    "name": "Navya Rao",
     "marks": {
       "Mathematics": 90,
       "Physics": 87,
@@ -155,7 +155,7 @@
   },
   {
     "id": "STU015",
-    "name": "Oscar Wilde",
+    "name": "Ayush Malhotra",
     "marks": {
       "Mathematics": 62,
       "Physics": 65,
